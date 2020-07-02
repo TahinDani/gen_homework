@@ -1,0 +1,59 @@
+.Menu {
+    display: flex;
+}
+
+.Menu-item {
+    margin: 0 1em;
+    position: relative;
+}
+
+.Menu-item-button {
+    padding: .4em 0;
+    text-transform: uppercase;
+}
+
+.Menu-item:hover .Menu-item-button{
+    border-bottom: 4px solid #C5281C;
+}
+
+.submenu-menu,
+.Menu-item-submenu {
+    display: none;
+    flex-direction: column;
+    background: rgb(216, 216, 216);
+    text-align: left;
+    position: absolute;
+    width: max-content;
+    min-width: 100%;
+}
+
+.Menu-item-submenu .submenu-item {
+    text-decoration: none;
+    padding: .8em 1em;
+    color: black;
+}
+
+.Menu-item-submenu .submenu-item:hover {
+    background: red;
+}
+
+.Menu-item:hover .Menu-item-submenu {
+    display: flex;
+}
+
+.submenu-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.submenu-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.submenu-item:hover > .submenu-menu {
+    display: flex;
+}
