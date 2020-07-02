@@ -3,24 +3,25 @@
 }
 
 .Menu-item {
-    margin: 0 1em;
+    margin: 0 .9em;
     position: relative;
 }
 
 .Menu-item-button {
     padding: .4em 0;
     text-transform: uppercase;
+    font-size: .9rem;
 }
 
 .Menu-item:hover .Menu-item-button{
-    border-bottom: 4px solid #C5281C;
+    border-bottom: 4px solid var(--main-red);
 }
 
 .submenu-menu,
 .Menu-item-submenu {
     display: none;
     flex-direction: column;
-    background: rgb(216, 216, 216);
+    background: rgb(226, 226, 226);
     text-align: left;
     position: absolute;
     width: max-content;
@@ -34,7 +35,8 @@
 }
 
 .Menu-item-submenu .submenu-item:hover {
-    background: red;
+    background: var(--main-red);
+    color: white;
 }
 
 .Menu-item:hover .Menu-item-submenu {

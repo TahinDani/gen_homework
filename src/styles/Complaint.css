@@ -1,0 +1,89 @@
+.Complaint-text {
+    display: flex;
+}
+
+.Complaint-text-links {
+    background: #e2e2e2;
+    padding: 1em;
+    font-size: .8rem;
+    color: var(--main-red);
+    margin-left: 2em;
+}
+
+.links-title {
+    font-weight: bold;
+    margin-bottom: 4px;
+    margin-top: 7px;
+}
+
+.links-link {
+    padding-left: 10px;
+    margin-bottom: 4px;
+}
+
+.separator {
+    height: 2px;
+    background: var(--main-red);
+    margin: 2em 0;
+}
+
+.Complaint-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px 80px;
+    font-size: .9rem;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+}
+
+.form-item input,
+.form-item select,
+.form-item textarea {
+    padding: 4px;
+    border-radius: 0;
+    border: 1px solid black;
+}
+
+.form-section-title {
+    font-weight: bold;
+    color: var(--main-red);
+    margin-bottom: 1em;
+}
+
+.form-item label {
+    margin-bottom: 2px;
+}
+
+.common-label-sub {
+    font-weight: 300;
+    font-size: .8rem;
+    margin-bottom: 1em;
+}
+
+.form-error {
+    font-size: .8rem;
+    color: red;
+}
+
+.form-submit {
+    grid-column: 2 / 3;
+    background: var(--main-red);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 1em 0;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background: var(--secondary-red);
+}
+
+.form-info {
+    grid-column: 2 / 3;
+}

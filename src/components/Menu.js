@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import '../styles/Menu.css'
 
 const MENU = [
@@ -164,7 +165,7 @@ class Menu extends Component {
               <div className="submenu-menu">
                 <a className="submenu-item" href="#">Email küldése</a>
                 <a className="submenu-item" href="#">Véleménybeküldés</a>
-                <a className="submenu-item" href="#">Panaszbejelentés</a>
+                <Link to="/panaszbejelentes" className="submenu-item" >Panaszbejelentés</Link>
               </div>
             </div>
             <div className="submenu-item">
