@@ -3,6 +3,7 @@
 :root {
   --main-red: #c5281c;
   --secondary-red: #f1644a;
+  --light-gray: #F2F2F2;
 }
 
 body, html {
@@ -14,4 +15,10 @@ body, html {
 .content-container {
   max-width: 1170px;
   margin: 0 auto;
+}
+
+.App {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
